@@ -12,6 +12,9 @@ class UEC_LECTURE_API AMyActor : public AActor
 	GENERATED_BODY()
 	
 		//test_message
+		//0
+		//1
+		//2!
 public:	
 	// Sets default values for this actor's properties
 	AMyActor();
