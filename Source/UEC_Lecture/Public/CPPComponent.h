@@ -1,11 +1,11 @@
 // Fill out your copyright notice in the Description page of Project Settings.
 
 #pragma once
-
 #include "CoreMinimal.h"
 #include "GameFramework/Actor.h"
 #include "CPPComponent.generated.h"
-
+class UPointLightComponent;
+class UArrowComponent;
 UCLASS()
 class UEC_LECTURE_API ACPPComponent : public AActor
 {
@@ -17,6 +17,8 @@ public:
 
 	UPROPERTY(EditAnywhere) USceneComponent* defaultSceneRoot;
 	UPROPERTY(EditAnywhere) UStaticMeshComponent* staticMesh;
+	UPROPERTY(VisibleAnywhere) UArrowComponent* arrow;
+	UPROPERTY(EditAnywhere) UPointLightComponent* light;
 
 protected:
 	// Called when the game starts or when spawned
